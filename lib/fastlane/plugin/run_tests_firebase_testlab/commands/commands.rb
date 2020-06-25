@@ -13,7 +13,7 @@ module Fastlane
     end
 
     def self.download_results
-      "gsutil -m cp -r"
+      "gsutil -o GSUtil:check_hashes=never -m cp -r"
     end
 
     def self.delete_resuls
